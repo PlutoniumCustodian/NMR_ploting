@@ -1,0 +1,149 @@
+# 1 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec"
+;C90.hpdec
+
+;;version: 1.0/ TS3.2 /2013/07/12
+
+;written for BioToolkit: VEDA July 2013
+;double-checked: VEDA SEWE July 2013
+# 9 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec"
+;direct excitation and acquisition on C with high power 1H decoupling
+;suitable for various types of decoupling
+
+;Avance II / III version
+;parameters:
+;p1      : C 90 at pl1
+;pl1     : C pulse power
+;pl12    : H dec power
+;d1      : recycle delay; 1 to 5 times T1
+;pcpd2   : pulse length in decoupling sequence cpdprg2
+;cpdprg2 : spinal64, swftppm, tppm etc. decoupling program
+;ZGOPTNS : -Dlacq : aq longer than 50 ms 
+;          -Dlg : automatic calculation of Lee-Goldberg offset
+;          or blank
+;ns      : 4 (full:4)
+
+# 26 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec"
+;$COMMENT= direct excitation on C with hp dec
+;$CLASS=BioSolids
+;$DIM=1D
+;$TYPE=direct excitation
+;$SUBTYPE=Setup
+
+
+;prosol relations=<biosolCHN>
+# 1 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/CHN_defs.incl" 1
+;Define Frequencies and other common variables 
+;Use with Carbon (X-channel) Detection  
+
+
+;$COMMENT=Frequency and Timing definitions
+;$CLASS=BioSolids INCL
+;$DIM=
+;$TYPE=Definitions
+;$SUBTYPE=Carbon Detect
+# 18 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/CHN_defs.incl"
+;$Id: CHN_defs.incl,v 1.1.2.2 2013/08/29 14:03:53 ber Exp $
+# 35 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec" 2
+
+        ; defines which channel corresponds to which nucleus
+# 1 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/trigg.incl" 1
+;version (13/08/19)
+
+;$COMMENT=definition of external trigger output, conn I pin 1
+;$CLASS=Solids INCL
+# 12 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/trigg.incl"
+;$Id: 6u setnmr3|28 \n 4u  setnmr3^28.incl,v 1.6.2.1 2013/08/29 14:03:54 ber Exp $
+# 37 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec" 2
+
+        ; definition of external trigger output
+
+"acqt0=-p1*2/3.1416"
+# 42 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec"
+                            ;##########################
+;$EXTERN                    ;# Python insertion point #
+                            ;##########################
+
+# 1 "mc_line 46 file /opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec exp. def. part of mc cmd. before ze"
+; dimension 1D; AQ_mode 
+define delay MCWRK
+define delay MCREST
+"MCREST = 30m - 30m"
+"MCWRK = 0.333333*30m"
+
+    dccorr
+# 46 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec"
+Prepare, ze
+# 1 "mc_line 46 file /opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec exp. def. of mc cmd. after ze"
+# 47 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec"
+
+;######################################################
+;#               Protections: Pre-Check               #
+;######################################################
+# 1 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/acq_prot.incl" 1
+;aq_prot.incl
+
+; Test the rf on-time during Aquisition (aq)
+; 50ms is allowed
+
+;$COMMENT=Protection against long acquisition time
+;$CLASS=Solids PROT
+# 10 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/acq_prot.incl"
+if "aq<50.1m" goto Passaq
+1u
+print "Acquisition time exceeds 50 ms limit!"
+goto HaltAcqu
+Passaq, 1m
+
+
+# 18 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/acq_prot.incl"
+;$Id: acq_prot.incl,v 1.1.2.2 2013/08/29 14:03:54 ber Exp $
+# 57 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec" 2
+
+        ;Max. 50 ms acquisition time
+
+# 61 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec"
+;######################################################
+;#           Start of Active Pulse Program            #
+;######################################################
+
+# 1 "mc_line 65 file /opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec exp. start label for mc cmd."
+Start, MCWRK  * 2 do:f2
+LBLF0, MCWRK 
+  MCREST
+# 66 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec"
+  d1 pl1:f1 pl12:f2
+
+  6u setnmr3|28 \n 4u  setnmr3^28
+  1u fq=0.0:f2                      ;set 1H on resonance
+# 71 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec"
+ (p1 ph1):f1  (1u cpds2):f2
+ 
+;#######################################################
+;#                     Acquisition                     #
+;####################################################### 
+
+  go=Start ph31         
+  1m do:f2
+# 1 "mc_line 79 file /opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec exp. mc cmd. in line"
+  MCWRK wr #0
+  MCWRK zd
+  lo to LBLF0 times td0
+
+# 80 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec"
+
+HaltAcqu, 1m
+Exit, exit
+# 84 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec"
+;#####################################
+;#             Phase Cycle           #
+;#####################################
+
+ph1 = 0 2 1 3        ; f1 hard pulse
+
+ph31= 0 2 1 3        ; receiver
+# 92 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec"
+;#######################################################
+
+
+# 96 "/opt/topspin3.5pl3/exp/stan/nmr/lists/pp/C90.hpdec"
+;$Id: C90.hpdec,v 1.1.2.3 2014/08/20 16:41:38 ber Exp $

@@ -1,0 +1,17 @@
+##TITLE= Parameter file, TopSpin 4.3.0
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= Titus
+$$ 2023-09-12 16:40:06.138 -0400  Titus@LAPTOP-QRDO9FT7
+$$ G:/My Drive/NEUP_NonMS/NMR/5day_washed/31P HPDEC_August2023/31P HPDEC_August2023/2/pdata/1/curdat2
+$$ process C:\Bruker\TopSpin4.3.0\prog\mod\dataserver.exe
+##$DATPATH2= <G:/My Drive/NEUP_NonMS/NMR/5day_washed/31P HPDEC_August2023>
+##$DU2= <>
+##$EXPNO2= 2
+##$NAME2= <31P HPDEC_August2023>
+##$PROCNO2= 999
+##$TYPE= <>
+##$USER2= <>
+##END=

@@ -1,0 +1,47 @@
+##TITLE= Audit trail, TopSpin 3.5 pl 3
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ /opt/topspin3.5pl3/Titus Reed/27Al HPDEC_August2023/2/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2023-08-18 14:29:03.979 -0400>,<nmrsu>,<b10207006>,<go4>,<TopSpin 3.5.3>,
+      <created by zg
+	started at 2023-08-18 13:54:00.683 -0400,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       FD 16 07 64 EB C2 AB E1 19 01 80 CE 22 E6 A5 AC
+       data hash MD5: 1K
+       A3 F6 E4 31 C4 C5 5D F5 45 41 64 6F 29 7A 36 5A>)
+(   2,<2023-08-18 14:59:29.129 -0400>,<nmrsu>,<b10207006>,<proc1d>,<TopSpin 3.5.3>,
+      <Start of raw data processing
+       efp LB = 100 FT_mod = 6 PKNL = 1 PHC0 = -15.41509 PHC1 = 51.69498 SI = 4K 
+       data hash MD5: 4K
+       F3 CC 35 4B 97 FE 73 76 6D BA C0 A4 ED D4 74 1A>)
+(   3,<2023-08-18 14:59:32.691 -0400>,<nmrsu>,<b10207006>,<proc1d>,<TopSpin 3.5.3>,
+      <apk 
+       data hash MD5: 4K
+       26 5C A9 DB A7 C4 4C 5F 70 AA A8 51 B8 AC 5B AA>)
+$$ G:/My Drive/NEUP_NonMS/NMR/5day_washed/27Al HPDEC_August2023/27Al HPDEC_August2023/2/pdata/1/auditp.txt
+(   4,<2023-09-26T16:21:06.919-0400>,<Titus>,<LAPTOP-QRDO9FT7>,<cprserver>,<TopSpin 4.3.0>,
+      <changed parameter F1 LB to 1.00>)
+(   5,<2023-09-26T16:21:12.479-0400>,<Titus>,<LAPTOP-QRDO9FT7>,<proc1d>,<TopSpin 4.3.0>,
+      <Start of raw data processing
+       efp LB = 1 FT_mod = 6 PKNL = 1 PHC0 = -1.764667 PHC1 = 32.43273 SI = 4K 
+       data hash MD5: 4K
+       2D 00 75 17 75 70 54 EF 92 18 91 3A 45 EC CA 24>)
+(   6,<2023-09-26T16:32:34.660-0400>,<Titus>,<LAPTOP-QRDO9FT7>,<dataserver>,<TopSpin 4.3.0>,
+      <Start of interactive peak picking
+       data hash MD5: 4K
+       2D 00 75 17 75 70 54 EF 92 18 91 3A 45 EC CA 24>)
+(   7,<2023-09-26T16:32:37.904-0400>,<Titus>,<LAPTOP-QRDO9FT7>,<peak>,<TopSpin 4.3.0>,
+      <1D Peak picking
+       data hash MD5: 4K
+       2D 00 75 17 75 70 54 EF 92 18 91 3A 45 EC CA 24>)
+(   8,<2023-09-26T16:32:40.690-0400>,<Titus>,<LAPTOP-QRDO9FT7>,<dataserver>,<TopSpin 4.3.0>,
+      <End of interactive peak picking
+       data hash MD5: 4K
+       2D 00 75 17 75 70 54 EF 92 18 91 3A 45 EC CA 24>)
+##END=
+
+$$ hash MD5
+$$ BF 17 86 20 09 94 E7 B5 7D BE EC 3A C3 22 FE 73

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PeakList modified="2023-09-12T16:42:09">
+  <PeakList1D>
+    <PeakList1DHeader creator="Titus" date="2023-09-12T16:42:08" expNo="4" name="31P HPDEC_August2023" owner="" procNo="1" source="G:/My Drive/NEUP_NonMS/NMR/5day_washed/31P HPDEC_August2023">
+      <PeakPickDetails>F1=27.454766ppm, F2=-21.147590ppm, MI=32.43cm, MAXI=150.76cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="5.26241" intensity="100.0" type="0"/>
+  </PeakList1D>
+</PeakList>

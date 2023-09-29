@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TopSpin 3.5 pl 3
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ 2023-08-18 15:11:57.983 -0400  nmrsu@b10207006
+$$ /opt/topspin3.5pl3/Titus Reed/27Al HPDEC_August2023/3/pdata/1/outd
+$$ process /opt/topspin3.5pl3/prog/mod/edparproc
+##$CURPLOT= <piR¤iR°iR>
+##$CURPRIN= <$1#1#0#1#1#1#1#1#0#-1#-1#1#-1>
+##$DFORMAT= <normdp>
+##$LAYOUT= <+/layouts.ATP/1D.xwp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##END=

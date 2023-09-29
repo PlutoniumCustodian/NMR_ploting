@@ -1,0 +1,5 @@
+   Current data set:
+   NAME =	31P HPDEC_August2023	EXPNO =	4	PROCNO = 1
+   DU   =	/opt/topspin3.5pl3/Titus Reed
+
+   Number   Integrated Region     Integral

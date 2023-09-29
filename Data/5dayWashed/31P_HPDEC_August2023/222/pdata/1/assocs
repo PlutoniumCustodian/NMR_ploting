@@ -1,0 +1,11 @@
+##TITLE= Parameter file, TopSpin 3.6.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 6	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ 2023-08-23 11:01:23.867 -0400  PSU\cpg5445@E1-053024
+$$ C:/Bruker/TopSpin3.6.2/data/Christy/31P HPDEC_August2023/4/pdata/1/assocs
+$$ process C:\Bruker\TopSpin3.6.2\prog\mod\dataserver.exe
+##$MULTDISP= <C:\Bruker\TopSpin3.6.2\data\Christy\31P HPDEC_August2023\3\pdata\1|C:\Bruker\TopSpin3.6.2\data\Christy\31P HPDEC_August2023\2\pdata\1|C:\Bruker\TopSpin3.6.2\data\Christy\31P HPDEC_August2023\1\pdata\1>
+##END=

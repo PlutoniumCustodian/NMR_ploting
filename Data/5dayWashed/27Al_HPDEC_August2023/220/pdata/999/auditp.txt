@@ -1,0 +1,16 @@
+##TITLE= Audit trail, TopSpin 4.3.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= Titus
+$$ G:/My Drive/NEUP_NonMS/NMR/5day_washed/27Al HPDEC_August2023/27Al HPDEC_August2023/1/pdata/999/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2023-09-15T16:05:01.691-0400>,<Titus>,<LAPTOP-QRDO9FT7>,<decon>,<TopSpin 4.3.0>,
+      <mdecon of
+	1 1 "27Al HPDEC_August2023" "G:/My Drive/NEUP_NonMS/NMR/5day_washed/27Al HPDEC_August2023"
+	F1P = 90.7086502573401, F2P = 2.66954851658513, MI = 0, MAXI = 50, ACFW = 0.5
+       data hash MD5: 4K
+       BE E6 E4 9C B5 C3 8F 9C 0F 0F 7D C0 52 53 4B 13>)
+##END=
+
+$$ hash MD5
+$$ 78 D3 DD 69 2F A4 A4 F7 65 66 3E 09 52 DC 6E 54

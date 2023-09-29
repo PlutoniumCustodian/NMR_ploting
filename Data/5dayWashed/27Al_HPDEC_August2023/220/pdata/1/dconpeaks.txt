@@ -1,0 +1,18 @@
+Data set: G:/My Drive/NEUP_NonMS/NMR/5day_washed/27Al HPDEC_August2023/27Al HPDEC_August2023/1/pdata/1/
+
+Fit type: Mixed Lorentzian and Gaussian
+
+Fit        Frequency             Width        Intensity       Area     %Lor.
+         ppm        Hz        ppm         Hz                           chisq
+
+  1                                                                    4e+15
+
+       61.541   8015.83   12.66396   1649.501      1.705    278.627    100.00
+STD:    0.042      5.45    0.12094     15.752      0.011
+
+
+  2                                                                  2.3e+17
+
+       10.394   1353.77    4.75930    619.907      9.192    564.578    100.00
+STD:    0.046      6.03    0.13389     17.440      0.180
+

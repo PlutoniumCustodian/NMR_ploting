@@ -1,0 +1,18 @@
+##TITLE= Audit trail, TopSpin 3.5 pl 3
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ /opt/topspin3.5pl3/Titus Reed/31P HPDEC_August2023/2/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2023-08-22 12:20:57.698 -0400>,<nmrsu>,<b10207006>,<go4>,<TopSpin 3.5.3>,
+      <created by zg
+	started at 2023-08-22 09:28:24.200 -0400,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       FD 16 07 64 EB C2 AB E1 19 01 80 CE 22 E6 A5 AC
+       data hash MD5: 2K
+       57 B2 48 F8 2A 23 8D 19 65 DA 21 33 AB F1 8F 27>)
+##END=
+
+$$ hash MD5
+$$ CE A3 8C EC 20 6C E2 C1 93 CD 33 15 D3 0E 8C 11

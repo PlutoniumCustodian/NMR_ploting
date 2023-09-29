@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PeakList modified="2023-09-25T15:52:57">
+  <PeakList1D>
+    <PeakList1DHeader creator="Titus" date="2023-09-25T11:20:15" expNo="1" name="31P HPDEC_August2023" owner="" procNo="1" source="G:/My Drive/NEUP_NonMS/NMR/5day_washed/31P HPDEC_August2023">
+      <PeakPickDetails>F1=6.386275ppm, F2=-0.222131ppm, MI=87.14cm, MAXI=102.22cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="3.64685" intensity="100.0" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="Titus" date="2023-09-25T11:20:15" expNo="1" name="31P HPDEC_August2023" owner="" procNo="1" source="G:/My Drive/NEUP_NonMS/NMR/5day_washed/31P HPDEC_August2023">
+      <PeakPickDetails>F1=-0.222131ppm, F2=-244.786694ppm, MI=0.00cm, MAXI=50.00cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="-39.197773" intensity="1.375072" type="0"/>
+  </PeakList1D>
+</PeakList>
